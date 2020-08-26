@@ -1,6 +1,7 @@
 let userInput = process.argv.slice(2);
 
 const alarm = userInput.forEach(input => {
+  input = parseInt(input);
   if (input === null) {
     return;
   } else if (input < 0) {
